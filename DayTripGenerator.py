@@ -84,19 +84,52 @@ def pick_entertainment(): # Selects entertainment with user option to say Y/N
     return entertainment
 
 
-destination = pick_neighborhood() 
+def pick_option(dictionary,key):
+    choice = random.choice(dictionary[key])
+    print(choice)
+    return choice
 
-print("Now let's figure out how you'll get there...")
+destination = pick_option(chicago_reco_lists,"transportation")
+entertainment =pick_option(chicago_reco_lists,"entertainment_options")
+print(entertainment)
+entertainment =pick_option(chicago_reco_lists,"entertainment_options")
+print(entertainment)
 
-transportation = pick_transport()
+def day_trip_generator():
+    day_trip_generator_is_running = True
+    destination = pick_neighborhood() 
 
-print("You'll probably get hungry, so let's look at some restaurants.")
+    print("Now let's figure out how you'll get there...")
 
-restaurant = pick_restaurant()
+    transportation = pick_transport()
 
-print("Finally, you can end your day with a fun activity.")
+    print("You'll probably get hungry, so let's look at some restaurants.")
 
-entertainment = pick_entertainment()
+    restaurant = pick_restaurant()
 
-your_chicago_day_trip = f"Enjoy your day in {destination}. You'll get there by taking {transportation}, have some food at {restaurant}, then go to {entertainment}. Have a fantastic day!"
-print(your_chicago_day_trip)
+    print("Finally, you can end your day with a fun activity.")
+
+    entertainment = pick_entertainment()
+
+    your_chicago_day_trip = f"Enjoy your day in {destination}. You'll get there by taking {transportation}, have some food at {restaurant}, then go to {entertainment}. Have a fantastic day!"
+    print(your_chicago_day_trip)
+
+    user_confirmation = input("Is this ok? Which part needs to change?")
+     if user_confirmation = "transportation":
+    transportation = pick_transport()
+    
+
+day_trip_generator()
+
+# Void Function
+
+def display_welcome():
+    print("Hello WOrld")
+
+#Pure Function:
+
+def sum_two_numbers(first_number: int, second_number:int):
+    sum = first_number + second_number
+    return sum
+
+sum_of_function_run = sum_two_numbers(2,2)
