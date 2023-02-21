@@ -2,7 +2,7 @@ import random
 
 chicago_reco_lists = {
     "destination_options": ["West Town", "Andersonville", "Bridgeport", "Edgewater", "Rogers Park"],
-    "restaurant_options": ["Split Rail", "First Slice", "Jackalope", "Edgewater Tacos", "Smackdab"],
+    "restaurant_options": ["Split Rail", "First Slice", "Jackalope", "Edgewater Tacos", "Karachi Chaat House"],
     "entertainment_options": ["Burlesque at Dorothy Downstairs", "Trivia Night at Eli Tea Bar", "a Gallery Show at Co-Prosperity", "a Play at The Edge Theatre", "Concert at RoPa Cabana"],
     "transport_options": ["a Car", "the CTA", "a Rideshare", "a Bike", "a Scooter"],
 }
@@ -98,5 +98,5 @@ print("Finally, you can end your day with a fun activity.")
 
 entertainment = pick_entertainment()
 
-your_chicago_day_trip = f"Have a great day in {destination}. You'll get there by taking {transportation}, have some food at {restaurant}, then go to{entertainment}"
+your_chicago_day_trip = f"Enjoy your day in {destination}. You'll get there by taking {transportation}, have some food at {restaurant}, then go to {entertainment}. Have a fantastic day!"
 print(your_chicago_day_trip)
